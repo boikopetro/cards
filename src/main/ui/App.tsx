@@ -1,6 +1,6 @@
 import './App.css';
 import Main from "../Main";
-import {BrowserRouter, Route} from "react-router-dom";
+import {HashRouter, Route} from "react-router-dom";
 import Registration from "./components/Registration";
 import Profile from "./components/Profile";
 import NotFound from "./components/NotFound";
@@ -11,7 +11,7 @@ import Routes from "./routes/Routes";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes/>
             <div>
                 <Route path="/login" component={Login}/>
@@ -24,7 +24,7 @@ const App = () => {
             </div>
 
 
-        </BrowserRouter>
+        </HashRouter>
     );
 
 }
